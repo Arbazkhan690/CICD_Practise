@@ -10,6 +10,7 @@ await page.locator('#Login').click()
 
 await page.locator('#password').fill(data.Password)
 await page.locator('#Login').click()
+  console.log("check for the Git changes")
 //await page.locator('#label').click()
 })
 }
