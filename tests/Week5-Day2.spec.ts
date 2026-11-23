@@ -4,7 +4,7 @@ import loginData from '../Utils/UserInfo.json';
 
 for(let data of loginData){
 test(`Learn to read json file ${data.TestCaseID}`, async({page})=>{
-await page.goto('https://login.salesforce.com')
+await page.goto('https://orgfarm-71e7a1be36-dev-ed.develop.my.salesforce.com/')
 await page.locator('#username').fill(data.UserName)
 await page.locator('#Login').click()
 
